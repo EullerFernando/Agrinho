@@ -1,18 +1,66 @@
 // Função que mostra as plantas conforme o mês selecionado
 function showPlants(month) {
     const listaPlants = {
-        Janeiro: ['Alface', 'Ervilha', 'Rúcula'],
-        Fevereiro: ['Cenoura', 'Beterraba', 'Alho-poró'],
-        Março: ['Tomate', 'Pepino', 'Alho'],
-        Abril: ['Abóbora', 'Batata-doce', 'Espinafre'],
-        Maio: ['Pimentão', 'Abobrinha', 'Berinjela'],
-        Junho: ['Feijão', 'Milho', 'Couve'],
-        Julho: ['Alface', 'Cenoura', 'Rúcula'],
-        Agosto: ['Brócolis', 'Repolho', 'Couve-flor'],
-        Setembro: ['Alho', 'Cebola', 'Tomate'],
-        Outubro: ['Pimentão', 'Beterraba', 'Abóbora'],
-        Novembro: ['Cenoura', 'Espinafre', 'Alho-poró'],
-        Dezembro: ['Alface', 'Ervilha', 'Rúcula']
+        Janeiro: [
+            { nome: 'Alface', imagem: 'https://via.placeholder.com/50x50.png?text=Alface' },
+            { nome: 'Ervilha', imagem: 'https://via.placeholder.com/50x50.png?text=Ervilha' },
+            { nome: 'Rúcula', imagem: 'https://via.placeholder.com/50x50.png?text=Rúcula' }
+        ],
+        Fevereiro: [
+            { nome: 'Cenoura', imagem: 'https://via.placeholder.com/50x50.png?text=Cenoura' },
+            { nome: 'Beterraba', imagem: 'https://via.placeholder.com/50x50.png?text=Beterraba' },
+            { nome: 'Alho-poró', imagem: 'https://via.placeholder.com/50x50.png?text=Alho-poró' }
+        ],
+        Março: [
+            { nome: 'Tomate', imagem: 'https://via.placeholder.com/50x50.png?text=Tomate' },
+            { nome: 'Pepino', imagem: 'https://via.placeholder.com/50x50.png?text=Pepino' },
+            { nome: 'Alho', imagem: 'https://via.placeholder.com/50x50.png?text=Alho' }
+        ],
+        Abril: [
+            { nome: 'Abóbora', imagem: 'https://via.placeholder.com/50x50.png?text=Abóbora' },
+            { nome: 'Batata-doce', imagem: 'https://via.placeholder.com/50x50.png?text=Batata-doce' },
+            { nome: 'Espinafre', imagem: 'https://via.placeholder.com/50x50.png?text=Espinafre' }
+        ],
+        Maio: [
+            { nome: 'Pimentão', imagem: 'https://via.placeholder.com/50x50.png?text=Pimentão' },
+            { nome: 'Abobrinha', imagem: 'https://via.placeholder.com/50x50.png?text=Abobrinha' },
+            { nome: 'Berinjela', imagem: 'https://via.placeholder.com/50x50.png?text=Berinjela' }
+        ],
+        Junho: [
+            { nome: 'Feijão', imagem: 'https://via.placeholder.com/50x50.png?text=Feijão' },
+            { nome: 'Milho', imagem: 'https://via.placeholder.com/50x50.png?text=Milho' },
+            { nome: 'Couve', imagem: 'https://via.placeholder.com/50x50.png?text=Couve' }
+        ],
+        Julho: [
+            { nome: 'Alface', imagem: 'https://via.placeholder.com/50x50.png?text=Alface' },
+            { nome: 'Cenoura', imagem: 'https://via.placeholder.com/50x50.png?text=Cenoura' },
+            { nome: 'Rúcula', imagem: 'https://via.placeholder.com/50x50.png?text=Rúcula' }
+        ],
+        Agosto: [
+            { nome: 'Brócolis', imagem: 'https://via.placeholder.com/50x50.png?text=Brócolis' },
+            { nome: 'Repolho', imagem: 'https://via.placeholder.com/50x50.png?text=Repolho' },
+            { nome: 'Couve-flor', imagem: 'https://via.placeholder.com/50x50.png?text=Couve-flor' }
+        ],
+        Setembro: [
+            { nome: 'Alho', imagem: 'https://via.placeholder.com/50x50.png?text=Alho' },
+            { nome: 'Cebola', imagem: 'https://via.placeholder.com/50x50.png?text=Cebola' },
+            { nome: 'Tomate', imagem: 'https://via.placeholder.com/50x50.png?text=Tomate' }
+        ],
+        Outubro: [
+            { nome: 'Pimentão', imagem: 'https://via.placeholder.com/50x50.png?text=Pimentão' },
+            { nome: 'Beterraba', imagem: 'https://via.placeholder.com/50x50.png?text=Beterraba' },
+            { nome: 'Abóbora', imagem: 'https://via.placeholder.com/50x50.png?text=Abóbora' }
+        ],
+        Novembro: [
+            { nome: 'Cenoura', imagem: 'https://via.placeholder.com/50x50.png?text=Cenoura' },
+            { nome: 'Espinafre', imagem: 'https://via.placeholder.com/50x50.png?text=Espinafre' },
+            { nome: 'Alho-poró', imagem: 'https://via.placeholder.com/50x50.png?text=Alho-poró' }
+        ],
+        Dezembro: [
+            { nome: 'Alface', imagem: 'https://via.placeholder.com/50x50.png?text=Alface' },
+            { nome: 'Ervilha', imagem: 'https://via.placeholder.com/50x50.png?text=Ervilha' },
+            { nome: 'Rúcula', imagem: 'https://via.placeholder.com/50x50.png?text=Rúcula' }
+        ]
     };
 
     const plantas = listaPlants[month];
@@ -22,11 +70,7 @@ function showPlants(month) {
     // Adiciona as plantas para o mês selecionado
     plantas.forEach(planta => {
         const li = document.createElement('li');
-        li.textContent = planta;
-        listaElement.appendChild(li);
-    });
-
-    // Atualiza o título da seção
-    const titulo = document.querySelector('#plantas-list h2');
-    titulo.textContent = `Plantas para ${month}`;
-}
+        
+        // Cria a imagem e o nome
+        const img = document.createElement('img');
+        img.src = planta.im
