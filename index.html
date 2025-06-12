@@ -9,53 +9,38 @@
 <body>
     <header>
         <h1>Calendário de Plantas Comestíveis</h1>
-        <p>Aprenda sobre plantas sazonais e quando cultivá-las.</p>
+        <p>Descubra quais plantas você pode cultivar em cada mês do ano.</p>
     </header>
     
-    <section id="plantas">
-        <h2>Plantas Comestíveis e Seus Ciclos</h2>
-        <div class="planta">
-            <h3>Alface</h3>
-            <p><strong>Melhor época para plantar:</strong> Março a Setembro</p>
-            <p><strong>Melhor época para colher:</strong> 2 meses após o plantio</p>
-        </div>
-        <div class="planta">
-            <h3>Tomate</h3>
-            <p><strong>Melhor época para plantar:</strong> Setembro a Dezembro</p>
-            <p><strong>Melhor época para colher:</strong> 3 meses após o plantio</p>
-        </div>
-        <div class="planta">
-            <h3>Abóbora</h3>
-            <p><strong>Melhor época para plantar:</strong> Outubro a Março</p>
-            <p><strong>Melhor época para colher:</strong> 4 meses após o plantio</p>
-        </div>
-    </section>
-    
     <section id="calendario">
-        <h2>Calendário de Plantio e Colheita</h2>
-        <div class="calendar-container">
-            <div class="month">
-                <h3>Janeiro</h3>
-                <p>Alface: Plantio, Tomate: Colheita</p>
-            </div>
-            <div class="month">
-                <h3>Fevereiro</h3>
-                <p>Abóbora: Plantio</p>
-            </div>
-            <div class="month">
-                <h3>Março</h3>
-                <p>Alface: Plantio, Tomate: Plantio</p>
-            </div>
-            <div class="month">
-                <h3>Abril</h3>
-                <p>Abóbora: Colheita</p>
-            </div>
-            <!-- Adicione mais meses conforme necessário -->
+        <div class="calendar">
+            <div class="month" onclick="showPlants('Janeiro')">Janeiro</div>
+            <div class="month" onclick="showPlants('Fevereiro')">Fevereiro</div>
+            <div class="month" onclick="showPlants('Março')">Março</div>
+            <div class="month" onclick="showPlants('Abril')">Abril</div>
+            <div class="month" onclick="showPlants('Maio')">Maio</div>
+            <div class="month" onclick="showPlants('Junho')">Junho</div>
+            <div class="month" onclick="showPlants('Julho')">Julho</div>
+            <div class="month" onclick="showPlants('Agosto')">Agosto</div>
+            <div class="month" onclick="showPlants('Setembro')">Setembro</div>
+            <div class="month" onclick="showPlants('Outubro')">Outubro</div>
+            <div class="month" onclick="showPlants('Novembro')">Novembro</div>
+            <div class="month" onclick="showPlants('Dezembro')">Dezembro</div>
+        </div>
+        <div id="plantas-list">
+            <h2>Plantas para Janeiro</h2>
+            <ul id="lista-plants">
+                <li>Alface</li>
+                <li>Ervilha</li>
+                <li>Rúcula</li>
+            </ul>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Calendário de Plantas Comestíveis</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
