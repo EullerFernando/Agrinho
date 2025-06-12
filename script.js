@@ -2,7 +2,7 @@
 function showPlants(month) {
     const listaPlants = {
         Janeiro: [
-            { nome: 'Alface', imagem: 'https://via.placeholder.com/50x50.png?text=Alface' },
+            { nome: 'Alface', imagem: 'alface.jpeg' },
             { nome: 'Ervilha', imagem: 'https://via.placeholder.com/50x50.png?text=Ervilha' },
             { nome: 'Rúcula', imagem: 'https://via.placeholder.com/50x50.png?text=Rúcula' }
         ],
