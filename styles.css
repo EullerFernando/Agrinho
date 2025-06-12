@@ -1,4 +1,3 @@
-/* Resetando alguns estilos padrões */
 * {
     margin: 0;
     padding: 0;
@@ -7,36 +6,74 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
-
-.container {
-    text-align: center;
-    background-color: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+    background-color: #f4f4f9;
     color: #333;
 }
 
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
+header {
+    background-color: #6fa3ef;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    text-align: center;
+    padding: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.8rem;
+}
+
+#plantas {
+    padding: 20px;
+}
+
+.planta {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planta h3 {
+    font-size: 1.5rem;
+}
+
+#calendario {
+    padding: 20px;
+    background-color: #e6f7ff;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.month {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.month h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #1e6fd9;
+}
+
+footer {
+    background-color: #6fa3ef;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

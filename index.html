@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Simples</title>
+    <title>Calendário de Plantas Comestíveis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Bem-vindo ao meu site!</h1>
-        <p>Este é um exemplo de um site simples com HTML, CSS e JavaScript.</p>
-        <button id="changeColorBtn">Mudar cor de fundo</button>
-    </div>
+    <header>
+        <h1>Calendário de Plantas Comestíveis</h1>
+        <p>Aprenda sobre plantas sazonais e quando cultivá-las.</p>
+    </header>
     
-    <script src="script.js"></script>
+    <section id="plantas">
+        <h2>Plantas Comestíveis e Seus Ciclos</h2>
+        <div class="planta">
+            <h3>Alface</h3>
+            <p><strong>Melhor época para plantar:</strong> Março a Setembro</p>
+            <p><strong>Melhor época para colher:</strong> 2 meses após o plantio</p>
+        </div>
+        <div class="planta">
+            <h3>Tomate</h3>
+            <p><strong>Melhor época para plantar:</strong> Setembro a Dezembro</p>
+            <p><strong>Melhor época para colher:</strong> 3 meses após o plantio</p>
+        </div>
+        <div class="planta">
+            <h3>Abóbora</h3>
+            <p><strong>Melhor época para plantar:</strong> Outubro a Março</p>
+            <p><strong>Melhor época para colher:</strong> 4 meses após o plantio</p>
+        </div>
+    </section>
+    
+    <section id="calendario">
+        <h2>Calendário de Plantio e Colheita</h2>
+        <div class="calendar-container">
+            <div class="month">
+                <h3>Janeiro</h3>
+                <p>Alface: Plantio, Tomate: Colheita</p>
+            </div>
+            <div class="month">
+                <h3>Fevereiro</h3>
+                <p>Abóbora: Plantio</p>
+            </div>
+            <div class="month">
+                <h3>Março</h3>
+                <p>Alface: Plantio, Tomate: Plantio</p>
+            </div>
+            <div class="month">
+                <h3>Abril</h3>
+                <p>Abóbora: Colheita</p>
+            </div>
+            <!-- Adicione mais meses conforme necessário -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Calendário de Plantas Comestíveis</p>
+    </footer>
 </body>
 </html>
